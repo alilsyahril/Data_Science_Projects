@@ -6,4 +6,13 @@ About twenty years ago, personal loan is a thing that is very complicated in ter
 So this project is aim to make some machine learning model to predict if an applicant is able to repay the lending company or not. The model is just a basic classification model such as logistic regression, support vector machine, decision tree, and random forest. I will use Python for coding and Jupyter Notebook as the IDE for running the program.
 
 
-### 2. 
+### 2. Data and Preprocessing
+Data is a business real case from a finance firm. The data 
+
+### 3. Feature Selection
+
+### 4. Models
+
+### 5. Results
+
+### 6. Discussion
