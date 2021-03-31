@@ -7,7 +7,11 @@ So this project is aim to make some machine learning model to predict if an appl
 
 
 ### 2. Data and Preprocessing
-Data is a business real case from a finance firm. The data 
+Data is a business real case from a finance firm. The data consist of 4 csv file, app_train.csv, app_test.csv, prev_app.csv, and installment_payment.csv. The file app_train.csv and app_test.csv contain information about loan and applicant at application time, those already separated in train and test file data. The file prev_app.csv contains information about previous loan application data and installment_payment.csv contains information about past payment data. Each of the file data contains a loan id as the id of each application. Also in prev_app.csv and installment_payment.csv, there are previous loan id of each applicants, so for every applicants who applied their loan, there is a record for their previous application data, means that every loan id has one or more previous application id. So, for those two data (prev_app.csv and installment_payment.csv), we can generate a derivative feature from it besides the features from the main dataset (app_train.csv and test_train.csv).
+
+For prev_app.csv data, a derivative feature can be extracted called APPROVED_SCORE based on the CONTRACT_STATUS of previous application data, is it 'Approved', 'Refused', 'Cancelled', or 'Unused offer'. The smaller the score, the more likely the costumer loan application will be approved and vice versa (this is mean to get the positive correlation with the target variable because 0 it means the more likely the costumer will repay the loan). So we make a score vocabulary based in the each CONTRACT_STATUS. This score based on the assumptions that costumers with Unused offer status and Cancelled status has a particular meaning.
+
+
 
 ### 3. Feature Selection
 
